@@ -1,0 +1,32 @@
+.left-column{
+    position: fixed;     /* keeps column on the left */
+    left: 10px;
+    top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;           /* spacing so they never touch */
+}
+
+#gmail{
+    width:240px;
+    background-color:white;
+}
+
+#powerschool{
+    width:200px;
+    background-color:white;
+}
+
+#schoology{
+    width:120px;
+    background-color:white;
+}
+
+#gmail{width:240px; background-color:white;}
+#powerschool{width:200px; background-color:white;}
+#schoology{width:120px; background-color:white;}
+
+#calendar{position: absolute; right:100px; filter: invert(.9) saturate(0.5) hue-rotate(145deg);}
+#hw{width:600px; height:300px; position:absolute; right:900px;filter: invert(.9) saturate(0.5) hue-rotate(145deg); }
+body{background-color: maroon;}
