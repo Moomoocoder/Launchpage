@@ -1,32 +1,51 @@
+body{
+    margin:0;
+    background-color:maroon;
+    font-family:sans-serif;
+}
+
+/* main page layout */
+.layout{
+    display:flex;
+    min-height:100vh;
+}
+
+/* left icon column */
 .left-column{
-    position: fixed;     /* keeps column on the left */
-    left: 10px;
-    top: 100px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 40px;           /* spacing so they never touch */
+    width:260px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:40px;
 }
 
-#gmail{
-    width:240px;
-    background-color:white;
+/* icons scale automatically */
+.left-column img{
+    width:100%;
+    background:white;
+    cursor:pointer;
 }
 
-#powerschool{
-    width:200px;
-    background-color:white;
+/* main content area */
+.main-content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
 }
 
-#schoology{
-    width:120px;
-    background-color:white;
+/* responsive frames */
+#calendar{
+    width:100%;
+    height:60vh;
+    border:0;
+    filter: invert(.9) saturate(.5) hue-rotate(145deg);
 }
 
-#gmail{width:240px; background-color:white;}
-#powerschool{width:200px; background-color:white;}
-#schoology{width:120px; background-color:white;}
-
-#calendar{position: absolute; right:100px; filter: invert(.9) saturate(0.5) hue-rotate(145deg);}
-#hw{width:600px; height:300px; position:absolute; right:900px;filter: invert(.9) saturate(0.5) hue-rotate(145deg); }
-body{background-color: maroon;}
+#hw{
+    width:100%;
+    height:35vh;
+    border:0;
+    filter: invert(.9) saturate(.5) hue-rotate(145deg);
+}
